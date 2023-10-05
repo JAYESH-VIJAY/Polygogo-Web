@@ -1,0 +1,78 @@
+<!-- ******************what i learned from this project and revised******************* -->
+<!-- 1. ****** for setup import start form @/assets/>> ******  -->
+<!-- we have to add path declaration in tsconfig.json file in tsconfig.json file ("baseUrl": "./") -->
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+});
+
+<!--2. ***** install typescript for node ***** -->
+npm install --save-dev @types/node
+
+<!-- 3. *****taiwind css setup *****" -->
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+<!-- 4. /* styles/index.css */ -->
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+<!-- 5. tailwind setup for font and colors -->
+/** @type {import('tailwindcss').Config} */
+import { lightColors } from "./colors";
+import { fonts } from "./fonts";
+export default {
+  content: [],
+  theme: {
+    extend: {
+      colors: {
+        primary: lightColors.primary,
+        secondary: lightColors.secondary,
+        accent: lightColors.accent,
+      },
+      fontFamily: {
+        primary: fonts.primary,
+        secondary: fonts.secondary,
+      },
+    },
+  },
+  plugins: [],
+};
+
+<!-- 6. color.ts and font.ts contains -->
+// ----------colors.js-----------
+export const lightColors = {
+  primary: "#3490dc",
+  secondary: "#ffed4a",
+  accent: "#ff6384",
+};
+
+export const darkColors = {
+  primary: "#3490dc",
+  secondary: "#ffed4a",
+  accent: "#ff6384",
+};
+
+// -------fonts.ts-----------
+export const fonts = {
+  primary: "Arial, sans-serif",
+  secondary: "Roboto, sans-serif",
+};
+
+<!-- 7. for svg import -->
+npm install vite-svg-loader --save-dev
+npm install --save-dev @svgr/webpack
+
+
+
+
