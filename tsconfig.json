@@ -1,0 +1,40 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "baseUrl": "./",
+    "useDefineForClassFields": true,
+    "lib": ["ESNEXT", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    "typeRoots": ["node_modules/@types"],
+    "paths": {
+      "@/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"]
+    },
+
+    //
+    "types": ["d3-color"],
+    "esModuleInterop": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "allowJs": true,
+    "noImplicitAny": false,
+    /* Linting */
+    "strict": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "references": [{ "path": "./tsconfig.node.json" }],
+  "json.schemas": [
+    {
+      "fileMatch": ["/tsconfig.json"],
+      "url": "https://json.schemastore.org/tsconfig"
+    }
+  ]
+}

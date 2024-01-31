@@ -1,0 +1,69 @@
+/* // ANTD CSS */
+
+/* // Pagination */
+.css-dev-only-do-not-override-bzhqxy.ant-pagination
+  .ant-pagination-item-active {
+  border-color: transparent !important;
+}
+
+.ant-pagination .ant-pagination-item-active a {
+  color: #263238 !important;
+}
+.ant-pagination-prev {
+  display: none !important;
+}
+
+.ant-pagination .ant-pagination-item-active:hover {
+  border-color: #e6e8e5 !important;
+}
+.ant-pagination .ant-pagination-item-active {
+  border-color: #e6e8e5 !important;
+}
+.ant-pagination-next {
+  display: none !important;
+}
+.reviews-input::placeholder {
+  color: #98a2b3;
+  font-size: 12px;
+}
+.ant-radio-wrapper .ant-radio-checked::after {
+  border-color: #253238 !important;
+}
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner {
+  border-color: #253238 !important;
+  background-color: #fff !important;
+}
+
+.ant-checkbox .ant-checkbox-inner:after {
+  border-color: #253238 !important;
+}
+.ant-checkbox-checked .ant-checkbox-inner {
+  border-color: #253238 !important;
+  background-color: #fff !important;
+}
+.ant-radio-wrapper .ant-radio-checked .ant-radio-inner::after {
+  background: #263238;
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background: #263238;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
+  -webkit-transition: 0.5s, background-color 0.5s, width 0.5s;
+  -o-transition: 0.5s, background-color 0.5s, width 0.5s;
+  transition: 0.5s, background-color 0.5s, width 0.5s;
+  -webkit-transition-delay: 0.5s, 0.5s, 0s;
+  -o-transition-delay: 0.5s, 0.5s, 0s;
+  transition-delay: 0.5s, 0.5s, 0s;
+}
+
+.swiper-pagination {
+  display: none !important;
+}
